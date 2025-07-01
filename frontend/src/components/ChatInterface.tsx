@@ -133,7 +133,7 @@ const ChatInterface = () => {
     
     try {
       // Connect to signaling server (for demo purposes, using a mock WebSocket connection)
-      socketRef.current = io("http://localhost:3000", {
+      socketRef.current = io("https://direct-web-connect.onrender.com", {
         transports: ['websocket']
       });
 
